@@ -1,0 +1,47 @@
+<div class="container-my">
+    {{#each tracks}}
+    <div class="list-column-my">
+        <div class="list-square-div">
+            {{!-- <form class="form-link" method="post">
+                {{!-- <button formaction="/edit/{{_id}}" class="form-link"> --}} 
+                <a href="/edit/{{_id}}/" class="form-link">
+                    <img src="{{thumbnail}}" alt="Image">
+                </a>
+                {{!-- </button>
+            </form> --}}
+        </div>
+        
+        <div class="list-attributes">
+            <a href="{{url}}" class="external-link">
+                <ul class="list-my">
+                    <li class="list-item-my">{{name}}</li>
+                    <li class="list-item-my">{{artist}}</li>
+                    <li class="list-item-my">{{album}}</li>       
+                </ul>
+            </a>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+<nav class="navbar bg-light fixed-bottom">
+  <a href="/playlists" class="btn nav-menu-my">
+    <img class ='btn-icon' src="https://cdn-icons-png.flaticon.com/512/727/727239.png" alt="">
+    <p class="btn-text">Playlists</p>
+  </a>
+
+  <a href="/artists" class="btn nav-menu-my">
+    <img class ='btn-icon' src="https://cdn-icons-png.flaticon.com/512/2908/2908584.png" alt="">
+    <p class="btn-text">Artists</p>
+  </a>
+
+  <a href="/songs" class="btn nav-menu-my">
+    <img class ='btn-icon' src="https://cdn-icons-png.flaticon.com/512/727/727218.png" alt="">
+    <p class="btn-text">Songs</p>
+  </a>
+  
+  <a href="/albums" class="btn nav-menu-my">
+    <img class ='btn-icon' src="https://cdn-icons-png.flaticon.com/512/2983/2983673.png" alt="">
+    <p class="btn-text">Albums</p>
+  </a>
+</nav>

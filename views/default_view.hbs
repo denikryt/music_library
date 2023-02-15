@@ -1,0 +1,37 @@
+{{!-- <div class="filters">
+    <a href="/search/track">
+        <button >tracks</button>
+    </a>
+
+    <a href="/search/album">
+        <button>albums</button>
+    </a>
+
+    <a href="/list">
+        <button>list</button>
+    </a>
+
+</div> --}}
+
+<div class="container-my">
+    {{#each tracks}}
+    <div class="column-my">
+        <div class="square-div">
+            <a href="{{url}}">
+                <img src="{{thumbnail}}" alt="Image">
+            </a>
+        </div>
+        <div class="attributes">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="{{url}}">{{url}}</a></li>
+                <li class="list-group-item">{{tag}}</li>
+                <li class="list-group-item">{{type}}</li>
+                <li class="list-group-item">{{artist}}</li>
+                <li class="list-group-item">{{album}}</li>
+                <li class="list-group-item">{{name}}</li>
+            </ul>
+        </div>
+    </div>
+    {{/each}}
+</div>
+

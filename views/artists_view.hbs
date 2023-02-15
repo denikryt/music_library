@@ -1,0 +1,31 @@
+<div class="container-my">
+  {{#each artists}}
+  <a href="/{{this}}" class="list-column-my">
+    <div class="artist-name-container">
+      <p class="artist-name">{{this}}</p>
+    </div>
+  </a>
+  {{/each}}
+</div>
+
+<nav class="navbar bg-light fixed-bottom">
+  <a href="/playlists" class="btn nav-menu-my">
+    <img class ='btn-icon' src="https://cdn-icons-png.flaticon.com/512/727/727239.png" alt="">
+    <p class="btn-text">Playlists</p>
+  </a>
+
+  <a href="/artists" class="btn nav-menu-my">
+    <img class ='btn-icon' src="https://cdn-icons-png.flaticon.com/512/2908/2908584.png" alt="">
+    <p class="btn-text">Artists</p>
+  </a>
+
+  <a href="/songs" class="btn nav-menu-my">
+    <img class ='btn-icon' src="https://cdn-icons-png.flaticon.com/512/727/727218.png" alt="">
+    <p class="btn-text">Songs</p>
+  </a>
+  
+  <a href="/albums" class="btn nav-menu-my">
+    <img class ='btn-icon' src="https://cdn-icons-png.flaticon.com/512/2983/2983673.png" alt="">
+    <p class="btn-text">Albums</p>
+  </a>
+</nav>

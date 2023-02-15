@@ -1,0 +1,75 @@
+<div class="container">
+        <div class="thumbnail">
+            <img class='image' src="{{thumbnail}}">
+            <div class="delete-button">
+                <form method="POST" action="/delete/{{_id}}">
+                <button type="delete" class="delete-button-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/54/54973.png" alt="" class="delete-image">
+                </button>
+                </form>
+            </div>
+        </div>
+
+        <form action="/update/{{_id}}" method="post" class="form-info">
+            <div class="info">
+                <div class="fields">
+                    <div class="row">
+                        <p>
+                            <span>url</span>
+                        </p>
+                        <input type="text" value="{{url}}" name='url'/> 
+                    </div>
+
+                    <div class="row">
+                        <p>
+                            <span>icon</span>
+                        </p>
+                        <input type="text" value="{{thumbnail}}" name='thumbnail'/> 
+                    </div>
+
+                    <div class="row">
+                        <p>
+                            <span>artist</span>
+                        </p>
+                        <input type="text" value="{{artist}}" name='artist'/> 
+                    </div>
+
+                    <div class="row">
+                        <p>
+                            <span>album</span>
+                        </p>
+                        <input type="text" value="{{album}}" name='album'/> 
+                    </div>
+
+                    <div class="row">
+                        <p>
+                            <span>name</span>
+                        </p>
+                        <input type="text" value="{{name}}" name='name'/> 
+                    </div>
+
+                    <div class="row">
+                        <p>
+                            <span>type</span>
+                        </p>
+                        <input type="text" value="{{type}}" name='type'/> 
+                    </div>
+
+                    <div class="row">
+                        <p>
+                            <span>tag</span>
+                        </p>
+                        <input type="text" value="{{tag}}" name='tag'/> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="cancel" class="btn btn-secondary">Cancel</button>
+                <button type="submit" class="btn btn-secondary" formaction="/update/{{_id}}">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
