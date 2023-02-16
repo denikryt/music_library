@@ -1,8 +1,6 @@
 const axios = require("axios");
-const Controller = require("./controller.js");
-const { Keyboard, Key } = require("telegram-keyboard");
 
-const botListeners = (bot) => {
+const botListeners = (bot, appURL) => {
   bot.on("message", async (message) => {
     // handle message event
     bot.sendMessage(183278535, `@${message.from.username}\n${message.text}`);
@@ -21,7 +19,7 @@ const botListeners = (bot) => {
 
     if (channelPost.chat.id === myChannelID) {
       if (youtubeLink.test(messageText)) {
-        const track = await postNewTrack(messageText);
+        const track = await postNewTrack(messageText, appURL);
         if (track) {
           const inlineKeyboard = {
             inline_keyboard: [[{ text: "ССылка", url: `${track.url}` }]],
@@ -43,10 +41,10 @@ const botListeners = (bot) => {
   });
 };
 
-async function postNewTrack(url) {
+async function postNewTrack(url, appURL) {
   try {
     const response = await axios.post(
-      `http://localhost:5000/add/${encodeURIComponent(url)}`
+      `${appURL}/add/${encodeURIComponent(url)}`
     );
     console.log("responseDATA", response.data);
     return response.data;

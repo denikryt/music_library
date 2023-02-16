@@ -1,5 +1,6 @@
 const Router = require("express");
 const Controller = require("./controller.js");
+const { botClass, bot } = require("./bot.js");
 
 const router = new Router();
 
@@ -24,5 +25,10 @@ router.post("/add/:url", Controller.createNewTrack);
 router.get("/css/:filename", Controller.serveCSS);
 
 router.get("/script/:filename", Controller.serveScripts);
+
+router.post(`/bot${bot.token}`, (req, res) => {
+  bot.processUpdate(req.body);
+  res.sendStatus(200);
+});
 
 module.exports = router;
