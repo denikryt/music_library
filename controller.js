@@ -189,7 +189,7 @@ class formController {
 
         try {
           // Navigate to the YouTube page
-          await page.goto(url);
+          await page.goto(url, { waitUntil: "load", timeout: 0 });
 
           // Scrape data from /html/head/link[28]
           const linkElement = await page.$('link[rel="image_src"]');
