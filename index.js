@@ -7,8 +7,8 @@ const bodyParser = require("body-parser");
 
 const { botClass, bot } = require("./bot.js");
 
-// const PORT = 5000; //FOR LOCAL USE
-const PORT = process.env.PORT || 5000;
+const PORT = 5000; //FOR LOCAL USE
+// const PORT = process.env.PORT || 5000;
 
 const app = express();
 const hbs = exphbs.create({
