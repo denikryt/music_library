@@ -1,7 +1,6 @@
 const { Schema, model, mongoose } = require("mongoose");
 
-const uri =
-  "";
+const uri = "";
 
 connect().catch((err) => console.log(err));
 
