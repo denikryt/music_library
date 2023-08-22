@@ -1,6 +1,6 @@
 const { Schema, model, mongoose } = require("mongoose");
 
-const uri = "";
+const uri = "mongodb+srv://denchik:D3778228545dan@cluster0.ntwfb.mongodb.net/music?retryWrites=true&w=majority";
 
 connect().catch((err) => console.log(err));
 
