@@ -16,7 +16,7 @@ class Bot {
   constructor() {
     this.token = "5301226184:AAFeEf2yfBMjjBFEZgVEk9eSFQP4VilACUY";
     this.bot = new TelegramBot(this.token, botOptions);
-    console.log("BOT", this.bot);
+    // console.log("BOT", this.bot);
   }
 
   async start() {

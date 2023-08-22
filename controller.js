@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 const fs = require("fs");
 const puppeteer = require("puppeteer");
-const youtube = require("youtube-metadata-from-url");
+const youtubeScraper = require("./youtubeScraperTest");
 
 class formController {
   constructor() {
@@ -95,7 +95,7 @@ class formController {
   }
 
   async form_render(req, res) {
-    console.log("REQ", req);
+    // console.log("REQ", req);
     try {
       const id = req.params.id;
       // console.log("id before conversion: ", id);
@@ -152,7 +152,7 @@ class formController {
     const url = decodeURIComponent(encodedUrl);
     let savedTrackID;
     try {
-      const { thumbnail, name, type } = await this.scrapeData(url);
+      const { thumbnail, name, author ,type } = await this.scrapeData(url);
 
       const track = new Tracks({
         url: url,
@@ -174,88 +174,96 @@ class formController {
   }
 
   async scrapeData(url) {
-    const youtubeLink = /^(https?:\/\/)?(www\.)?(youtube\.com\/|youtu\.be\/)/;
-    const youtubeVideoLink =
-      /^(https?:\/\/)?(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)/;
-    const youtubePlaylistLink =
-      /^(https?:\/\/)?(www\.)?youtube\.com\/playlist\?list=/;
-
-    if (youtubeLink.test(url)) {
-      if (youtubeVideoLink.test(url)) {
-        const browser = await puppeteer.launch({
-          args: ["--no-sandbox", "--disable-setuid-sandbox"],
-        });
-        const page = await browser.newPage();
-
-        try {
-          // Navigate to the YouTube page
-          await page.goto(url, { waitUntil: "load", timeout: 0 });
-
-          // Scrape data from /html/head/link[28]
-          const linkElement = await page.$('link[rel="image_src"]');
-
-          // Extract the href attribute value from the <link> tag
-          const thumbnail = await linkElement.evaluate((element) =>
-            element.getAttribute("href")
-          );
-
-          console.log("Thumbnail", thumbnail);
-
-          // Scrape data from /html/head/title
-          const titleElement = await page.$('meta[name="title"]');
-          const titleText = await titleElement.getProperty("content");
-          const name = await titleText.jsonValue();
-
-          console.log("Video name:", name);
-
-          // Wait for the video player to be ready
-          await page.waitForSelector(
-            ".html5-video-player:not(.ad-showing) video"
-          );
-
-          // Get the duration text element
-          const durationElement = await page.$(
-            ".html5-video-player:not(.ad-showing) .ytp-time-duration"
-          );
-
-          // Extract the duration text and convert it to seconds
-          const durationText = await page.evaluate(
-            (element) => element.textContent,
-            durationElement
-          );
-
-          console.log(`The video is ${durationText} seconds long`);
-
-          // Parse the time in timeText into a Date object
-          const timeParts = durationText.split(":");
-          const time = new Date(0, 0, 0, 0, timeParts[0], timeParts[1]);
-
-          // Compare the time to 15:00
-          const cutoffTime = new Date(0, 0, 0, 15, 0);
-          const isTrack = time <= cutoffTime;
-
-          const type = isTrack ? "track" : "album";
-          console.log(type);
-
-          return { thumbnail, name, type };
-        } catch (error) {
-          console.log(error);
-        } finally {
-          await browser.close();
-        }
-      }
-
-      if (youtubePlaylistLink.test(url)) {
-        console.log(await youtube.metadata(url));
-        var name = (await youtube.metadata(url)).title;
-        var thumbnail = (await youtube.metadata(url)).thumbnail_url;
-        var type = "album";
-        return { thumbnail, name, type };
-      }
-    } else {
-      error("NOT A YOUTUBE LINK");
-    }
+    const data = youtubeScraper.scrapeData(url)
+    return data
   }
+
+  // async scrapeData(url) {
+  //   const youtubeLink =
+  //     /^(http(s)?:\/\/)?(www\.)?((m\.)?youtube\.com|youtu\.be)\/.+$/;
+  //   const youtubeVideoLink =
+  //     /^(http(s)?:\/\/)?(www\.)?((m\.)?youtube\.com|youtu\.be)\/(watch\?v=)?([a-zA-Z0-9_-]+)$/;
+  //   const youtubePlaylistLink =
+  //     /^(https?:\/\/)?(www\.)?youtube\.com\/playlist\?list=/;
+
+  //   if (youtubeLink.test(url)) {
+  //     if (youtubeVideoLink.test(url)) {
+  //       const browser = await puppeteer.launch({
+  //         args: ["--no-sandbox", "--disable-setuid-sandbox", "--headless"],
+  //       });
+  //       const page = await browser.newPage();
+
+  //       try {
+  //         page.setDefaultTimeout(0);
+  //         page.setDefaultNavigationTimeout(0);
+  //         // Navigate to the YouTube page1
+  //         await page.goto(url);
+
+  //         // Scrape data from /html/head/link[28]
+  //         const linkElement = await page.$('link[rel="image_src"]');
+
+  //         // Extract the href attribute value from the <link> tag
+  //         const thumbnail = await linkElement.evaluate((element) =>
+  //           element.getAttribute("href")
+  //         );
+
+  //         console.log("Thumbnail", thumbnail);
+
+  //         // Scrape data from /html/head/title
+  //         const titleElement = await page.$('meta[name="title"]');
+  //         const titleText = await titleElement.getProperty("content");
+  //         const name = await titleText.jsonValue();
+
+  //         console.log("Video name:", name);
+
+  //         // Wait for the video player to be ready
+  //         await page.waitForSelector(
+  //           ".html5-video-player:not(.ad-showing) video"
+  //         );
+
+  //         // Get the duration text element
+  //         const durationElement = await page.$(
+  //           ".html5-video-player:not(.ad-showing) .ytp-time-duration"
+  //         );
+
+  //         // Extract the duration text and convert it to seconds
+  //         const durationText = await page.evaluate(
+  //           (element) => element.textContent,
+  //           durationElement
+  //         );
+
+  //         console.log(`The video is ${durationText} seconds long`);
+
+  //         // Parse the time in timeText into a Date object
+  //         const timeParts = durationText.split(":");
+  //         const time = new Date(0, 0, 0, 0, timeParts[0], timeParts[1]);
+
+  //         // Compare the time to 15:00
+  //         const cutoffTime = new Date(0, 0, 0, 15, 0);
+  //         const isTrack = time <= cutoffTime;
+
+  //         const type = isTrack ? "track" : "album";
+  //         console.log(type);
+
+  //         return { thumbnail, name, type };
+  //       } catch (error) {
+  //         console.log(error);
+  //       } finally {
+  //         await browser.close();
+  //       }
+  //     }
+
+  //     if (youtubePlaylistLink.test(url)) {
+  //       console.log(await youtube.metadata(url));
+  //       var name = (await youtube.metadata(url)).title;
+  //       var thumbnail = (await youtube.metadata(url)).thumbnail_url;
+  //       var type = "album";
+  //       return { thumbnail, name, type };
+  //     }
+  //   } else {
+  //     error("NOT A YOUTUBE LINK");
+  //   }
+  // }
 
   async serveCSS(req, res) {
     const filename = req.params.filename;
@@ -285,3 +293,4 @@ class formController {
 }
 
 module.exports = new formController();
+

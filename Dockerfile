@@ -17,11 +17,9 @@ RUN groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser \
     && mkdir -p /home/pptruser/Downloads \
     && chown -R pptruser:pptruser /home/pptruser
 
-
 WORKDIR /home/pptruser/app
 
 COPY package*.json ./
-
 
 COPY . .
 
@@ -30,14 +28,9 @@ RUN chown -R pptruser:pptruser /home/pptruser/app
 # Run everything after as non-privileged user.
 USER pptruser
 
-
 RUN npm install
 
 # CMD ["google-chrome-stable"]
-
-
-
-
 
 ENV RENDER_EXTERNAL_URL=$RENDER_EXTERNAL_URL
 
