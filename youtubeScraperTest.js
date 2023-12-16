@@ -82,9 +82,9 @@ class YoutubeScraper {
 
   async extractVideoId(url) {
     const youtubeVideoLink =
-      /^(http(s)?:\/\/)?(www\.)?((m\.)?youtube\.com|youtu\.be)\/(watch\?v=)?([a-zA-Z0-9_-]+)(\&list=[a-zA-Z0-9_-]+)?(\&index=\d+)?$/;
+    /^(http(s)?:\/\/)?(www\.)?(m\.)?(youtube\.com|youtu\.be)\/(watch\?v=)?([a-zA-Z0-9_-]+)(\&[a-zA-Z0-9_-]+=[a-zA-Z0-9_-]+)*(\?.*)?$/;
     const youtubePlaylistLink =
-      /^(https?:\/\/)?(www\.)?youtube\.com\/playlist\?list=([a-zA-Z0-9_-]+)$/;  
+    /^(https?:\/\/)?(www\.)?youtube\.com\/playlist\?list=([a-zA-Z0-9_-]+)$/;  
 
     const videoMatch = url.match(youtubeVideoLink);
     const playlistMatch = url.match(youtubePlaylistLink);
@@ -102,9 +102,9 @@ class YoutubeScraper {
     const youtubeLink =
     /^(http(s)?:\/\/)?(www\.)?((m\.)?youtube\.com|youtu\.be)\/.+$/;
     const youtubeVideoLink =
-      /^(http(s)?:\/\/)?(www\.)?((m\.)?youtube\.com|youtu\.be)\/(watch\?v=)?([a-zA-Z0-9_-]+)(\&list=[a-zA-Z0-9_-]+)?(\&index=\d+)?$/;
+    /^(http(s)?:\/\/)?(www\.)?(m\.)?(youtube\.com|youtu\.be)\/(watch\?v=)?([a-zA-Z0-9_-]+)(\&[a-zA-Z0-9_-]+=[a-zA-Z0-9_-]+)*(\?.*)?$/;
     const youtubePlaylistLink =
-      /^(https?:\/\/)?(www\.)?youtube\.com\/playlist\?list=([a-zA-Z0-9_-]+)$/;  
+    /^(https?:\/\/)?(www\.)?youtube\.com\/playlist\?list=([a-zA-Z0-9_-]+)$/;  
 
     let embedURL = ''
 

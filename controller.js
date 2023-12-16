@@ -155,7 +155,7 @@ class formController {
       const { thumbnail, name, author ,type } = await this.scrapeData(url);
 
       const track = new Tracks({
-        url: url,
+        url: url, 
         thumbnail: thumbnail,
         name: name,
         type: type,
