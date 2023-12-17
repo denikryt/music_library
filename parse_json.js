@@ -34,6 +34,8 @@ const messages = data.messages || [];
 const idLinkMap = mapMessageLinks(messages);
 
 const failed_links = []
+const succeeded_links = []
+const tracks = []
 let ok
 
 async function main(){
@@ -42,28 +44,50 @@ async function main(){
   // console.log('ID сообщения : Ссылка');
   for (const messageId in idLinkMap) {
     console.log(`---------------\n${messageId.padEnd(5)}: ${idLinkMap[messageId]}`);
-    ok = await scraper.scrapeData(idLinkMap[messageId])
+    trackInfo = await scraper.scrapeData(idLinkMap[messageId])
     
-    if (!ok) {
+    if (!trackInfo) {
       console.log('FAILED')
       failed_links.push(idLinkMap[messageId])
+    } else {
+      succeeded_links.push(idLinkMap[messageId])
+      tracks.push(trackInfo)
+      writeToJSON(tracks)
     }
   }
-  writeToFile(failed_links, 'output.txt')
+  writeToFile(failed_links, 'failed links.txt')
+  writeToFile(succeeded_links, 'succeeded links.txt')
+  // writeToJSON(tracks)
   await scraper.browser.close()
+}
+
+function writeToJSON(data){
+    // Преобразование массива объектов в JSON
+  const jsonData = JSON.stringify(data, null, 2); // Красивое форматирование JSON с отступами 2
+
+  // Запись JSON данных в файл
+  const filePath = 'tracks.json'; // Путь к файлу, куда нужно сохранить JSON данные
+
+  fs.writeFile(filePath, jsonData, 'utf8', (err) => {
+    if (err) {
+      console.error('Ошибка записи файла:', err);
+      return;
+    }
+    console.log('Данные успешно сохранены в файле:', filePath);
+  });
 }
 
 // Функция для записи данных в файл
 function writeToFile(array, filename) {
   const dataToWrite = array.join('\n'); // Объединяем элементы массива в строку с переносом строки между элементами
 
-  fs.writeFile(filename, dataToWrite, err => {
+  fs.writeFile(filename, dataToWrite, { flag: 'w' }, err => {
     if (err) {
       console.error('Произошла ошибка при записи в файл:', err);
     } else {
       console.log(`Данные успешно записаны в файл '${filename}'.`);
     }
   });
-}
+  };
 
 main()

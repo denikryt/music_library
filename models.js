@@ -1,7 +1,8 @@
 const { Schema, model, mongoose } = require("mongoose");
+require('dotenv').config();
 
-const uri = "mongodb+srv://denchik:D3778228545dan@cluster0.ntwfb.mongodb.net/music?retryWrites=true&w=majority";
-
+const uri = process.env.MONGODB_URI;
+            
 connect().catch((err) => console.log(err));
 
 async function connect() {
@@ -13,7 +14,7 @@ const trackSchema = new mongoose.Schema({
   thumbnail: { type: String, required: true },
   type: { type: String },
   tag: { type: String },
-  name: { type: String },
+  name: { type: String, required: true },
   album: { type: String },
   artist: { type: String },
 });
@@ -30,4 +31,4 @@ const userSchema = new mongoose.Schema({
 //   trackSchema,
 // };
 
-module.exports = model("form", trackSchema);
+module.exports = model("trackSchema", trackSchema);

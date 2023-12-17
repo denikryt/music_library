@@ -118,13 +118,17 @@ class YoutubeScraper {
 
   async convertYoutubeUrlToEmbed(url) {
     const youtubeVideoLink =
-    /^(http(s)?:\/\/)?(www\.)?(youtu\.be)\/([a-zA-Z0-9_-]+)(\?[^#\s]*)?(#[^\s]*)?$/;
+        /^(http(s)?:\/\/)?(www\.)?(m\.youtube\.com|youtube\.com)\/watch\?([^#\s]*)?(#[^\s]*)?$/;
+    const youtubeVideoShortLink = /^(http(s)?:\/\/)?(www\.)?youtu\.be\/([a-zA-Z0-9_-]+)(\?[^#\s]*)?(#[^\s]*)?$/;
     const youtubePlaylistLink =
-      /^(https?:\/\/)?(www\.)?(youtube\.com)\/playlist\?list=([a-zA-Z0-9_-]+)(\&[a-zA-Z0-9_-]+=[a-zA-Z0-9_-]+)*$/;
+        /^(https?:\/\/)?(www\.)?(youtube\.com)\/playlist\?list=([a-zA-Z0-9_-]+)(\&[a-zA-Z0-9_-]+=[a-zA-Z0-9_-]+)*$/;
 
     let embedURL = '';
   
     if (youtubeVideoLink.test(url)) {
+      const videoId = this.extractVideoId(url);
+      embedURL = `https://www.youtube.com/embed/${videoId}`;
+    } else if (youtubeVideoShortLink.test(url)) {
       const videoId = this.extractVideoId(url);
       embedURL = `https://www.youtube.com/embed/${videoId}`;
     } else if (youtubePlaylistLink.test(url)) {
@@ -322,13 +326,14 @@ class YoutubeScraper {
         await this.page.goto(embedURL);
         const EmbedError = await this.hasYtpErrorClass(this.page);
 
-        const type = embedURL.length > 47 ? 'playlist' : 'video';
+        const type = embedURL.length > 47 ? 'playlist' : 'track';
         let data = {}
 
         if (EmbedError) {
           console.log('[scrapeData] Embed url crahsed');
           data = await this.getDataByMetadata(this.page, url)
           data.type = type
+          data.url = url
           console.log('[scrapeData] DATA: ', data)
           
           if (!data) {
@@ -340,6 +345,7 @@ class YoutubeScraper {
           console.log('[scrapeData] Embed url works')
           data = await this.getDataByEmbedUrl(this.page, type)
           data.type = type
+          data.url = url
           console.log('[scrapeData] DATA: ', data)
         }
         return data
