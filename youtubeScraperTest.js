@@ -2,7 +2,6 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const puppeteer = require("puppeteer");
 
-
 class YoutubeScraper {
   constructor() {
     this.browser = null;
@@ -132,7 +131,7 @@ class YoutubeScraper {
       const playlistId = this.extractPlaylistId(url);
       embedURL = `https://www.youtube.com/embed/videoseries?list=${playlistId}`;
     } else {
-      return 'UNKNOWN LINK';
+      return false;
     }
   
     return embedURL;
@@ -266,7 +265,7 @@ class YoutubeScraper {
     return text
   }
 
-  async processLinks(links) {
+  async runBrowser() {
     this.browser = await puppeteer.launch({
       args: ["--no-sandbox", "--disable-setuid-sandbox", "--headless"],
     });
@@ -274,6 +273,9 @@ class YoutubeScraper {
     await this.page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36');
     this.page.setDefaultTimeout(0);
     this.page.setDefaultNavigationTimeout(0);
+  }
+
+  async processLinks(links) {
 
     try {
       for (let key in links) {
@@ -312,34 +314,39 @@ class YoutubeScraper {
     const embedURL = await this.convertYoutubeUrlToEmbed(url)
     console.log('[scrapeData] EMBED URL: ',embedURL)
 
-    try {
-      await this.page.goto(embedURL);
-      const EmbedError = await this.hasYtpErrorClass(this.page);
+    if (embedURL == false) {
+      return false
 
-      const type = embedURL.length > 47 ? 'playlist' : 'video';
-      let data = {}
+    } else {
+      try {
+        await this.page.goto(embedURL);
+        const EmbedError = await this.hasYtpErrorClass(this.page);
 
-      if (EmbedError) {
-        console.log('[scrapeData] Embed url crahsed');
-        data = await this.getDataByMetadata(this.page, url)
-        data.type = type
-        console.log('[scrapeData] DATA: ', data)
-        
-        if (!data) {
-          console.log('UNABLE TO EXTRACT DATA')
-          return null
+        const type = embedURL.length > 47 ? 'playlist' : 'video';
+        let data = {}
+
+        if (EmbedError) {
+          console.log('[scrapeData] Embed url crahsed');
+          data = await this.getDataByMetadata(this.page, url)
+          data.type = type
+          console.log('[scrapeData] DATA: ', data)
+          
+          if (!data) {
+            console.log('UNABLE TO EXTRACT DATA')
+            return null
+          }
+
+        } else {
+          console.log('[scrapeData] Embed url works')
+          data = await this.getDataByEmbedUrl(this.page, type)
+          data.type = type
+          console.log('[scrapeData] DATA: ', data)
         }
+        return data
 
-      } else {
-        console.log('[scrapeData] Embed url works')
-        data = await this.getDataByEmbedUrl(this.page, type)
-        data.type = type
-        console.log('[scrapeData] DATA: ', data)
+      } catch (error) {
+        console.log(error);
       }
-      return data
-
-    } catch (error) {
-      console.log(error);
     }
   }
 
@@ -389,31 +396,10 @@ class YoutubeScraper {
   }
 }
 
-// module.exports = new YoutubeScraper();
+module.exports = new YoutubeScraper();
 
-const scraper = new YoutubeScraper()
+// const scraper = new YoutubeScraper()
 
-// async function processLinks(links) {
-//   for (let key in links) {
-//     if (links.hasOwnProperty(key)) {
-//       console.log(`Свойство "${key}":`);
-
-//       // Итерация по каждому элементу массива, связанного с текущим свойством
-//       for (let index = 0; index < links[key].length; index++) {
-//         const url = links[key][index];
-//         console.log(`Элемент ${index + 1}: ${url}`);
-
-//         try {
-//           await scraper.scrapeData(url);
-//         } catch (error) {
-//           console.log('Error while scraping data:', error);
-//         }
-//       }
-//     }
-//   }
-// }
-
-// (async () => {
 const links = {
   videolinks: [
     "https://youtu.be/lh_WD_cLrRY?si=Xxw4B3PcBteb5mQh",
@@ -428,7 +414,5 @@ const links = {
     "https://youtube.com/playlist?list=OLAK5uy_kP22lgx7FDIkJ3jM1gQbSGhyTb8MJwBVw&si=T9CWW8U9eyoQv4tB",
   ]
 }
-// };
 
-scraper.processLinks(links);
-// })();
+// scraper.processLinks(links);
