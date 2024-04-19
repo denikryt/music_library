@@ -42,8 +42,8 @@
     "url": "https://m.youtube.com/watch?v=axc7k4LjQ0s&list=PLuhAz5P0GD3Y1mD_yStetMsT_jEzbSpm1&index=2"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi/pvlKmQOsp9Y/hqdefault.jpg",
-    "name": "Dr. Dre - Deep Cover [Instrumental]",
+    "thumbnail": "https://i.ytimg.com/vi/pvlKmQOsp9Y/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGH8gEygkMA8=&rs=AOn4CLB9SrQVoQWsPjccuXsaC1p8qKheCg",
+    "name": null,
     "author": "David Fiset",
     "type": "track",
     "url": "https://www.youtube.com/watch?v=pvlKmQOsp9Y&list=RD1KnzerkN5WU&index=15"
@@ -86,7 +86,7 @@
   {
     "thumbnail": "https://i.ytimg.com/vi/Z6ih1aKeETk/maxresdefault.jpg",
     "name": "Tycho - Dive (Full Album)",
-    "author": "itskerim",
+    "author": "Kerim Kalyon",
     "type": "track",
     "url": "https://www.youtube.com/watch?v=Z6ih1aKeETk"
   },
@@ -140,8 +140,8 @@
     "url": "https://www.youtube.com/watch?v=Pclv31cDTTc"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi/phBThlPTBEg/maxresdefault.jpg",
-    "name": "Dmitri Shostakovich - Waltz No. 2",
+    "thumbnail": "https://i.ytimg.com/vi_webp/phBThlPTBEg/maxresdefault.webp",
+    "name": null,
     "author": "Abbraccio Classical",
     "type": "track",
     "url": "https://www.youtube.com/watch?v=phBThlPTBEg"
@@ -203,7 +203,7 @@
     "url": "https://www.youtube.com/watch?v=52vRcMbYf-0\\"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/4vYZ0LQkWo0/hqdefault.webp",
+    "thumbnail": "https://i.ytimg.com/vi/4vYZ0LQkWo0/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHeA4AC6AKKAgwIABABGHIgQygsMA8=&rs=AOn4CLCxYLrZy5Te26pAGMLV-BRoNANJ2g",
     "name": null,
     "author": "FunkCantDie",
     "type": "track",
@@ -301,13 +301,6 @@
     "url": "https://www.youtube.com/watch?v=i9hWiOhVyWo&list=TLPQMjYwOTIwMjBgqjoSZcLAoA&index=54"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi/4N3N1MlvVc4/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AG-AoAC8AGKAgwIABABGFogWihaMA8=&rs=AOn4CLDyuMmYdMtisA1lhT6siG_MumXOpQ",
-    "name": null,
-    "author": "orijimi",
-    "type": "track",
-    "url": "https://m.youtube.com/watch?v=4N3N1MlvVc4"
-  },
-  {
     "thumbnail": "https://i.ytimg.com/vi_webp/LL998ajnjN4/maxresdefault.webp",
     "name": null,
     "author": "alteredzones",
@@ -369,13 +362,6 @@
     "author": "Vibe Boa",
     "type": "track",
     "url": "https://youtu.be/iKWctbOAoXI"
-  },
-  {
-    "thumbnail": "https://i.ytimg.com/vi/Bs8hVkG3XME/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGFIgVihlMA8=&rs=AOn4CLDMDgwQDlU0ezAOXpoxFfTUmexu-Q",
-    "name": null,
-    "author": "mod elo",
-    "type": "track",
-    "url": "https://youtu.be/Bs8hVkG3XME"
   },
   {
     "thumbnail": "https://i.ytimg.com/vi/l0vrsO3_HpU/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AHeA4AC4AOKAgwIABABGDQgZSguMA8=&rs=AOn4CLAtmZxjn5jFzB8iW4pYjJtF66ZAxg",
@@ -595,8 +581,8 @@
     "url": "https://www.youtube.com/watch?v=fNFzfwLM72c"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi/xwtdhWltSIg/hqdefault.jpg",
-    "name": "R.E.M. - Losing My Religion (Official Music Video)",
+    "thumbnail": "https://i.ytimg.com/vi/xwtdhWltSIg/maxresdefault.jpg",
+    "name": "R.E.M. - Losing My Religion (Official HD Music Video)",
     "author": "remhq",
     "type": "track",
     "url": "https://www.youtube.com/watch?v=xwtdhWltSIg"
@@ -812,8 +798,8 @@
     "url": "https://www.youtube.com/watch?v=hc2TLJFKazs"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi/3jVc8coAUhc/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AG-AoAC8AGKAgwIABABGGUgZShlMA8=&rs=AOn4CLDMsiFM6-stHIGFRotHfYfkZFVFIg",
-    "name": null,
+    "thumbnail": "https://i.ytimg.com/vi/3jVc8coAUhc/hqdefault.jpg",
+    "name": "Goran Bregovic - Gas Gas",
     "author": "elenarosca",
     "type": "track",
     "url": "https://www.youtube.com/watch?v=3jVc8coAUhc"
@@ -1106,8 +1092,8 @@
     "url": "https://www.youtube.com/watch?v=pSVbF6DGH9U"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi/WK4HHaNhcgU/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGBMgYyh_MA8=&rs=AOn4CLCC-6PVsWu12EenXMt-Q3CyL2EWPA",
-    "name": null,
+    "thumbnail": "https://i.ytimg.com/vi/WK4HHaNhcgU/hqdefault.jpg",
+    "name": "Duck Sauce - Barbra Streisand (Original Mix)",
     "author": "St3volution",
     "type": "track",
     "url": "https://www.youtube.com/watch?v=WK4HHaNhcgU"
@@ -1150,7 +1136,7 @@
   {
     "thumbnail": "https://i.ytimg.com/vi/K-Vz8McGQ4o/maxresdefault.jpg",
     "name": "Ding Dong Song (Radio Edit)",
-    "author": "Günther - Topic",
+    "author": "GÜNTHER - Topic",
     "type": "track",
     "url": "https://www.youtube.com/watch?v=K-Vz8McGQ4o"
   },
@@ -1302,7 +1288,7 @@
     "url": "https://www.youtube.com/watch?v=6yP4Nm86yk0"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/9P_wHDW2VJY/hqdefault.webp",
+    "thumbnail": "https://i.ytimg.com/vi/9P_wHDW2VJY/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AG-A4AC6AKKAgwIABABGGUgYChEMA8=&rs=AOn4CLDbXpWWSppgKKf0wK-qq76-zRGeKA",
     "name": null,
     "author": "MALFA",
     "type": "track",
@@ -2023,7 +2009,7 @@
     "url": "https://www.youtube.com/watch?v=4b1wt3-zpzQ"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi/8bumj9pmGiw/sddefault.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/8bumj9pmGiw/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGHIgTCguMA8=&rs=AOn4CLDOjFG1bq1P3wmH8n7QDb8PVpW9PQ",
     "name": null,
     "author": "MariMari142",
     "type": "track",
@@ -2079,8 +2065,8 @@
     "url": "https://www.youtube.com/watch?v=oU6uUEwZ8FM"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/U-Ooxpz0Eqk/maxresdefault.webp",
-    "name": null,
+    "thumbnail": "https://i.ytimg.com/vi/U-Ooxpz0Eqk/maxresdefault.jpg",
+    "name": "Somewhere Over The Rainbow_What A Wonderful World",
     "author": "Israel Kamakawiwo'ole - Topic",
     "type": "track",
     "url": "https://www.youtube.com/watch?v=U-Ooxpz0Eqk&list=PLU-ZElfW-S32bPTw7GIPJN6hsN-d8YbQa&index=443"
@@ -2184,8 +2170,8 @@
     "url": "https://youtu.be/I2BF0TAhyDU"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/JG2o_CinnPY/hqdefault.webp",
-    "name": null,
+    "thumbnail": "https://i.ytimg.com/vi/JG2o_CinnPY/hqdefault.jpg",
+    "name": "Sylford Walker - Jah Golden Pen  1975",
     "author": "Juweeltjes",
     "type": "track",
     "url": "https://www.youtube.com/watch?v=JG2o_CinnPY"
@@ -2298,7 +2284,7 @@
   {
     "thumbnail": "https://i.ytimg.com/vi/OrMjc4oz0mY/hqdefault.jpg",
     "name": "My Bloody Valentine | Loveless | Full Album (Remastered)",
-    "author": "Sourabh",
+    "author": "Goku",
     "type": "track",
     "url": "https://youtu.be/OrMjc4oz0mY"
   },
@@ -2457,7 +2443,7 @@
     "url": "https://youtu.be/lSY1tyuR3WQ"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi/Mj5SgEro1qM/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gMCghMA8=&rs=AOn4CLCGQyJE8VEw64RBCL4KCU2OqJviaQ",
+    "thumbnail": "https://i.ytimg.com/vi/Mj5SgEro1qM/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gQygjMA8=&rs=AOn4CLC1ikZfDZfOEZLCuWwueLwF58U0GQ",
     "name": null,
     "author": "Reggae2Reggae",
     "type": "track",
@@ -2471,7 +2457,7 @@
     "url": "https://youtube.com/watch?v=PLFVGwGQcB0&feature=share"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi/19FhGMEJOs4/maxresdefault.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/19FhGMEJOs4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGDEgVShyMA8=&rs=AOn4CLBX8sY_BJEKiRHMLeTKDeA-E4Xvlg",
     "name": null,
     "author": "Boas",
     "type": "track",
@@ -2535,7 +2521,7 @@
   },
   {
     "thumbnail": "https://i.ytimg.com/vi/MIDn8SDR_cQ/maxresdefault.jpg",
-    "name": null,
+    "name": "Babylon Rule Dem",
     "author": "Groundation - Topic",
     "type": "track",
     "url": "https://youtu.be/MIDn8SDR_cQ"
@@ -2935,33 +2921,33 @@
   {
     "thumbnail": "https://i.ytimg.com/vi/g8N3eG0u_OU/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVShGMA8=&rs=AOn4CLCRe8qCIaGPLL0KAppLB1RcUfwKqg",
     "name": null,
-    "author": "𝔐𝔲𝔰𝔦𝔠𝔞 𝔐𝔢𝔡𝔦𝔢𝔳𝔞𝔩𝔢",
+    "author": "Musica Medievale 🏹",
     "type": "track",
     "url": "https://youtube.com/watch?v=g8N3eG0u_OU&feature=share"
   },
   {
     "thumbnail": "https://i.ytimg.com/vi/T0vrXzZzr38/maxresdefault.jpg",
-    "name": "𝔈𝔡𝔡𝔞 • myths from medieval Iceland - Ensemble Sequentia",
-    "author": "𝔐𝔲𝔰𝔦𝔠𝔞 𝔐𝔢𝔡𝔦𝔢𝔳𝔞𝔩𝔢",
+    "name": "Edda • myths from medieval Iceland - Ensemble Sequentia",
+    "author": "Musica Medievale 🏹",
     "type": "track",
     "url": "https://youtu.be/T0vrXzZzr38"
   },
   {
     "thumbnail": "https://i.ytimg.com/vi/u1gFInUNXGY/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgYShTMA8=&rs=AOn4CLBnryJfqAAV_rbpzPfPHPKdgBbY0g",
     "name": null,
-    "author": "𝔐𝔲𝔰𝔦𝔠𝔞 𝔐𝔢𝔡𝔦𝔢𝔳𝔞𝔩𝔢",
+    "author": "Musica Medievale 🏹",
     "type": "track",
     "url": "https://youtu.be/u1gFInUNXGY"
   },
   {
     "thumbnail": "https://i.ytimg.com/vi/Sge237YCi9c/maxresdefault.jpg",
-    "name": "𝔏'𝔄𝔯𝔱 𝔡𝔲 𝔓𝔰𝔞𝔩𝔱𝔢𝔯𝔦𝔬𝔫 - Les Musiciens de Provence",
-    "author": "𝔐𝔲𝔰𝔦𝔠𝔞 𝔐𝔢𝔡𝔦𝔢𝔳𝔞𝔩𝔢",
+    "name": "L'Art du Psalterion - Les Musiciens de Provence",
+    "author": "Musica Medievale 🏹",
     "type": "track",
     "url": "https://youtu.be/Sge237YCi9c"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi/0k1NLtG7OPs/hqdefault.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/0k1NLtG7OPs/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AG-AoAC8AGKAgwIABABGFYgYChlMA8=&rs=AOn4CLCy5GEMfD4LrKULUnuF1FotOE843A",
     "name": null,
     "author": "BigLesbowski",
     "type": "track",
@@ -2969,8 +2955,8 @@
   },
   {
     "thumbnail": "https://i.ytimg.com/vi/ShRg1FaJsrY/maxresdefault.jpg",
-    "name": "ℭ𝔞𝔯𝔪𝔦𝔫𝔞 𝔅𝔲𝔯𝔞𝔫𝔞, XII century - Ensemble Alegria",
-    "author": "𝔐𝔲𝔰𝔦𝔠𝔞 𝔐𝔢𝔡𝔦𝔢𝔳𝔞𝔩𝔢",
+    "name": "Carmina Burana, XII century - Ensemble Alegria",
+    "author": "Musica Medievale 🏹",
     "type": "track",
     "url": "https://youtu.be/ShRg1FaJsrY"
   },
@@ -3249,8 +3235,8 @@
   },
   {
     "thumbnail": "https://i.ytimg.com/vi/Sge237YCi9c/maxresdefault.jpg",
-    "name": "𝔏'𝔄𝔯𝔱 𝔡𝔲 𝔓𝔰𝔞𝔩𝔱𝔢𝔯𝔦𝔬𝔫 - Les Musiciens de Provence",
-    "author": "𝔐𝔲𝔰𝔦𝔠𝔞 𝔐𝔢𝔡𝔦𝔢𝔳𝔞𝔩𝔢",
+    "name": "L'Art du Psalterion - Les Musiciens de Provence",
+    "author": "Musica Medievale 🏹",
     "type": "track",
     "url": "https://youtu.be/Sge237YCi9c"
   },
@@ -3263,8 +3249,8 @@
   },
   {
     "thumbnail": "https://i.ytimg.com/vi/QWW_I0RawEg/hqdefault.jpg",
-    "name": "ℭ𝔬𝔡𝔢𝔵 𝔅𝔲𝔯𝔞𝔫𝔲𝔰: the real medieval CARMINA BURANA, Clemencic Consort",
-    "author": "𝔐𝔲𝔰𝔦𝔠𝔞 𝔐𝔢𝔡𝔦𝔢𝔳𝔞𝔩𝔢",
+    "name": "CODEX BURANUS: the real medieval CARMINA BURANA, Clemencic Consort",
+    "author": "Musica Medievale 🏹",
     "type": "track",
     "url": "https://youtu.be/QWW_I0RawEg"
   },
@@ -3325,7 +3311,7 @@
     "url": "https://www.youtube.com/playlist?list=OLAK5uy_nFKo3tR_9zYSdJA0STwqW3zu6c9E6ypuk"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/YwhVvWQe50M/sddefault.webp",
+    "thumbnail": "https://i.ytimg.com/vi/YwhVvWQe50M/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AGeBoAC4AOKAgwIABABGGUgVShTMA8=&rs=AOn4CLABFKXhqDMe7kgRbdgsKARRUrEyWA",
     "name": null,
     "author": "Musica Andina",
     "type": "track",
@@ -3367,7 +3353,7 @@
     "url": "https://youtu.be/QpxN2VXPMLc"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/MprBjqBntdA/sddefault.webp",
+    "thumbnail": "https://i.ytimg.com/vi/MprBjqBntdA/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGH8gSigrMA8=&rs=AOn4CLCUlqKyfQv1Z40dWNm9D3QfI0zevg",
     "name": null,
     "author": "Garoth Archives II: Orchestral Acoustic & World",
     "type": "track",
@@ -3493,7 +3479,7 @@
     "url": "https://youtu.be/309BiDs79QY"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi/5WSrLTBll20/sddefault.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/5WSrLTBll20/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AHUBoAC1gOKAgwIABABGHIgRSgzMA8=&rs=AOn4CLCyg3IwFxYS6odsgcc6I29CQbMAIg",
     "name": "Canciones de Medicina",
     "author": "Alonso del Río",
     "type": "playlist",
@@ -3703,13 +3689,6 @@
     "url": "https://youtu.be/LMjUC_LMD5g"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/DzV-LOx2Hns/maxresdefault.webp",
-    "name": null,
-    "author": "Fakcha Uku",
-    "type": "track",
-    "url": "https://youtu.be/DzV-LOx2Hns"
-  },
-  {
     "thumbnail": "https://i.ytimg.com/vi_webp/eMqbIHOaP-Q/maxresdefault.webp",
     "name": null,
     "author": "HUMAZAPAS Oficial",
@@ -3859,7 +3838,7 @@
   {
     "thumbnail": "https://i.ytimg.com/vi/2JhISf9K1cE/maxresdefault.jpg",
     "name": "Homenaje a la Pachamama",
-    "author": "Various Artists - Topic",
+    "author": "Release - Topic",
     "type": "playlist",
     "url": "https://youtube.com/playlist?list=OLAK5uy_lhCccuZEtQEiyyM0QgfIUusVohrQQ4w8A"
   },
@@ -3998,7 +3977,7 @@
   {
     "thumbnail": "https://i.ytimg.com/vi_webp/t0hAUHcExqg/maxresdefault.webp",
     "name": null,
-    "author": "Cimarrón Producciones",
+    "author": "Cimarrón",
     "type": "track",
     "url": "https://youtu.be/t0hAUHcExqg"
   },
@@ -4074,27 +4053,27 @@
   {
     "thumbnail": "https://i.ytimg.com/vi/2JhISf9K1cE/maxresdefault.jpg",
     "name": "Homenaje a la Pachamama",
-    "author": "Various Artists - Topic",
+    "author": "Release - Topic",
     "type": "playlist",
     "url": "https://youtube.com/playlist?list=OLAK5uy_lhCccuZEtQEiyyM0QgfIUusVohrQQ4w8A"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/-LgYzva-xq8/maxresdefault.webp",
-    "name": null,
+    "thumbnail": "https://i.ytimg.com/vi/-LgYzva-xq8/maxresdefault.jpg",
+    "name": "Avril 14th",
     "author": "Aphex Twin - Topic",
     "type": "track",
     "url": "https://youtu.be/-LgYzva-xq8"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/-ZVZgCrHy5E/maxresdefault.webp",
-    "name": null,
+    "thumbnail": "https://i.ytimg.com/vi/-ZVZgCrHy5E/maxresdefault.jpg",
+    "name": "Alberto Balsalm",
     "author": "Aphex Twin - Topic",
     "type": "track",
     "url": "https://youtu.be/-ZVZgCrHy5E"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/SPBHjejGam4/maxresdefault.webp",
-    "name": null,
+    "thumbnail": "https://i.ytimg.com/vi/SPBHjejGam4/maxresdefault.jpg",
+    "name": "Pancake Lizard",
     "author": "Aphex Twin - Topic",
     "type": "track",
     "url": "https://youtu.be/SPBHjejGam4"
@@ -4102,7 +4081,7 @@
   {
     "thumbnail": "https://i.ytimg.com/vi_webp/E3yp2EYoLDY/maxresdefault.webp",
     "name": "Katakura Yujiki: лучшие треки",
-    "author": "Katakura Yujiki - Topic",
+    "author": "Release - Topic",
     "type": "playlist",
     "url": "https://youtube.com/playlist?list=OLAK5uy_ld0uTez6qOREtwVnixqQoCbd4-izr7P5M"
   },
@@ -4165,7 +4144,7 @@
   {
     "thumbnail": "https://i.ytimg.com/vi/3S2He2Ypvq4/maxresdefault.jpg",
     "name": "Healing Song 10",
-    "author": "Johnny Mike - Topic",
+    "author": "Verdell Primeaux - Topic",
     "type": "track",
     "url": "https://youtu.be/3S2He2Ypvq4"
   },
@@ -4242,7 +4221,7 @@
   {
     "thumbnail": "https://i.ytimg.com/vi/mpTXTgm9K7I/maxresdefault.jpg",
     "name": "Ancestral Voices",
-    "author": "William Eaton - Topic",
+    "author": "R. Carlos Nakai - Topic",
     "type": "playlist",
     "url": "https://youtube.com/playlist?list=OLAK5uy_loX7qIxEARi4lQZHqcvapAi4tA6vF61Bo"
   },
@@ -4274,7 +4253,7 @@
     "url": "https://youtube.com/playlist?list=OLAK5uy_lNJT9UcLPydm2cMpAnXM1DPxKUfigaS_s"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/10SJ5wkmp24/maxresdefault.webp",
+    "thumbnail": "https://i.ytimg.com/vi/10SJ5wkmp24/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgUShDMA8=&rs=AOn4CLCfEvXn0GUD6RATo1t-K7xgPTAAvQ",
     "name": null,
     "author": "Healing Songs Space",
     "type": "track",
@@ -4414,8 +4393,8 @@
     "url": "https://youtu.be/r_CgHS91Bho"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/SaOenM0ZB28/maxresdefault.webp",
-    "name": null,
+    "thumbnail": "https://i.ytimg.com/vi/SaOenM0ZB28/maxresdefault.jpg",
+    "name": "На Оболоні",
     "author": "Re-read - Topic",
     "type": "track",
     "url": "https://youtu.be/SaOenM0ZB28"
@@ -4535,14 +4514,14 @@
   {
     "thumbnail": "https://i.ytimg.com/vi/Bb3Lfo-cL70/maxresdefault.jpg",
     "name": null,
-    "author": "Various Artists - Topic",
+    "author": "Release - Topic",
     "type": "track",
     "url": "https://youtu.be/Bb3Lfo-cL70"
   },
   {
     "thumbnail": "https://i.ytimg.com/vi/O1PsX4v5ugM/maxresdefault.jpg",
     "name": "The Sounds of Indian Country (Litefoot Presents)",
-    "author": "Various Artists - Topic",
+    "author": "Release - Topic",
     "type": "playlist",
     "url": "https://youtube.com/playlist?list=OLAK5uy_lENMEDJUv6wIHoi8UitxVSgbg-1HGUTqE"
   },
@@ -4563,7 +4542,7 @@
   {
     "thumbnail": "https://i.ytimg.com/vi_webp/57zgCwScAF0/maxresdefault.webp",
     "name": null,
-    "author": "Various Artists - Topic",
+    "author": "Release - Topic",
     "type": "track",
     "url": "https://youtu.be/57zgCwScAF0"
   },
@@ -4624,8 +4603,8 @@
     "url": "https://youtu.be/r2eCaa8nqis?si=5rO3a9lLNHbXoM_2"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/2JM9sHXJDlU/maxresdefault.webp",
-    "name": null,
+    "thumbnail": "https://i.ytimg.com/vi/2JM9sHXJDlU/maxresdefault.jpg",
+    "name": "Tzen Tze Re Rei",
     "author": "Loli Cosmica - Topic",
     "type": "track",
     "url": "https://youtu.be/2JM9sHXJDlU?si=W44sJp_4GsX1UvrU"
@@ -4707,11 +4686,11 @@
     "url": "https://youtu.be/64aouN2oohM?si=FexHcHzbFITpYw0E"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/PHF0000ouds/maxresdefault.webp",
+    "thumbnail": "https://i.ytimg.com/vi_webp/HsdY9ZmAhDo/maxresdefault.webp",
     "name": null,
     "author": "Laraaji - Topic",
     "type": "track",
-    "url": "https://youtu.be/PHF0000ouds?si=3l0JH07KUMZK6_Lz"
+    "url": "https://youtu.be/HsdY9ZmAhDo?si=yeqNXVkiGSZJxX38"
   },
   {
     "thumbnail": "https://i.ytimg.com/vi_webp/bpPjAIre7NU/maxresdefault.webp",
@@ -4735,7 +4714,7 @@
     "url": "https://youtube.com/playlist?list=OLAK5uy_lermRu9ku4ACmgwzF5T1Ow0LCD9cPvHQc&si=D1uj7apTIvkb_LRn"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/Zpb7CWcPeRQ/sddefault.webp",
+    "thumbnail": "https://i.ytimg.com/vi/Zpb7CWcPeRQ/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGGUgWChJMA8=&rs=AOn4CLCrkyykvtswwgFjgrdpvk7t9tcJZg",
     "name": null,
     "author": "Michele Autunno",
     "type": "track",
@@ -4749,9 +4728,9 @@
     "url": "https://youtu.be/pyqFTZwoIkM?si=rCc6YOQHlxT11Ov8"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/M8Zw5VaAhbQ/maxresdefault.webp",
+    "thumbnail": "https://i.ytimg.com/vi/A7uEXXLEzXw/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AHOBYAC4AOKAgwIABABGGUgVShJMA8=&rs=AOn4CLCPb6dErK0oFW_e3mjO9SHsFHonxQ",
     "name": "Under The Green Corn Moon",
-    "author": "Various Artists - Topic",
+    "author": "Rudi Gabriel Bedy",
     "type": "playlist",
     "url": "https://youtube.com/playlist?list=OLAK5uy_l9zWrfPMJapdnUKg1xzpzhjKgN07xPXqo&si=9Oq40mwozZOV7iWN"
   },
@@ -4798,8 +4777,8 @@
     "url": "https://youtube.com/playlist?list=OLAK5uy_kdHO_l-Gybg7jxuWZ_ZNKld5mIgPfUwn8&si=AZ9GCoN03STD9Ikr"
   },
   {
-    "thumbnail": "https://i.ytimg.com/vi_webp/8ZVzdluHdi8/maxresdefault.webp",
-    "name": null,
+    "thumbnail": "https://i.ytimg.com/vi/8ZVzdluHdi8/maxresdefault.jpg",
+    "name": "Cada Mañana",
     "author": "chica ayacu - Topic",
     "type": "track",
     "url": "https://youtu.be/8ZVzdluHdi8?si=wRc0J7BaiL3mnA_h"
@@ -4899,5 +4878,205 @@
     "author": "nicorobokun",
     "type": "track",
     "url": "https://youtu.be/lh_WD_cLrRY?si=Xxw4B3PcBteb5mQh"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/sCwBXZJ9qQU/maxresdefault.jpg",
+    "name": null,
+    "author": "IVOXYGEN",
+    "type": "track",
+    "url": "https://youtu.be/sCwBXZJ9qQU?si=kX5fno-HnIYH9Pf2"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi_webp/Y6NZ83-mHPg/maxresdefault.webp",
+    "name": null,
+    "author": "Ecuador Manta - Topic",
+    "type": "track",
+    "url": "https://youtu.be/Y6NZ83-mHPg?si=53M63WTbC_4qy5tv"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/EhFwsIq2YD4/maxresdefault.jpg",
+    "name": "Aruskipasipxananakasakipunirakispawa (Authentic Andean Music From Bolivia)",
+    "type": "playlist",
+    "url": "https://youtube.com/playlist?list=OLAK5uy_lXfDF3TtbqRcmq06ryK9L8MnGlTt4PLjc&si=WanzTS775tJ2q6tB"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi_webp/7w-dKGKQoJE/maxresdefault.webp",
+    "name": null,
+    "author": "Healing Songs Space",
+    "type": "track",
+    "url": "https://youtu.be/7w-dKGKQoJE?si=kDQLJ6bFvI4AsPSC"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi_webp/AV-W_balz50/maxresdefault.webp",
+    "name": "Musica Folklore de América Latina - Charango Indio",
+    "author": "Passion Inkanto - Topic",
+    "type": "playlist",
+    "url": "https://youtube.com/playlist?list=OLAK5uy_l1-PFP-0YbhohGvMzdtIMwUSwCpBKC1Uc&si=m0zt9mhQN-WZGkkK"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi_webp/lq0heuH8J8E/maxresdefault.webp",
+    "name": null,
+    "author": "Inner Life Songs - Topic",
+    "type": "track",
+    "url": "https://youtu.be/lq0heuH8J8E?si=amE9sPKNjB0SPwW1"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/kmmY7_D50_A/maxresdefault.jpg",
+    "name": null,
+    "author": "Son de Madera - Topic",
+    "type": "track",
+    "url": "https://youtu.be/kmmY7_D50_A?si=j-PTBAgSw-YaRWHE"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/g7eQNML7mUw/maxresdefault.jpg",
+    "name": null,
+    "author": "Zacamandú - Topic",
+    "type": "track",
+    "url": "https://youtu.be/g7eQNML7mUw?si=3O2BnurXiTnNikPp"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/8jL6bVP84_I/maxresdefault.jpg",
+    "name": "Pascuala Ilabaca y Fauna on Audiotree Live (Full Session)",
+    "author": "Audiotree",
+    "type": "track",
+    "url": "https://youtu.be/8jL6bVP84_I?si=zbP2pnUVpnaUi8U9"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/xuvDeHnXnjY/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AHeA4AC4AOKAgwIABABGFogWihaMA8=&rs=AOn4CLD87cp8iWrgD7lhoNbIcCuDZOKlow",
+    "name": null,
+    "author": "Bobtheclamm",
+    "type": "track",
+    "url": "https://youtu.be/xuvDeHnXnjY?si=tqpoDdKF8zripVTW"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/YI_0OwQF3eg/maxresdefault.jpg",
+    "name": "Winds Of Honor",
+    "author": "Gary Stroutsos - Topic",
+    "type": "playlist",
+    "url": "https://youtube.com/playlist?list=OLAK5uy_n6tMR0PXGoIi1q-OVrVJT55z36VLVyjpY&si=Uxw9Ojoc2LR6LiB4"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi_webp/E1kFxpNR6Jc/maxresdefault.webp",
+    "name": null,
+    "author": "Constantinople",
+    "type": "track",
+    "url": "https://youtu.be/E1kFxpNR6Jc?si=lOEDSgoHSdSyyn6V"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/m_tiZkvZzus/maxresdefault.jpg",
+    "name": "The Native Heart",
+    "author": "Gary Stroutsos - Topic",
+    "type": "playlist",
+    "url": "https://www.youtube.com/playlist?list=OLAK5uy_k8f_qVz9ZgB9jWlh8ka3kl0mNaNUaBI7Q"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/Qqi_EZ0DgrA/hqdefault.jpg",
+    "name": "Nala Sinephro - Space 1.8 (Full Album)",
+    "author": "Nala Sinephro",
+    "type": "track",
+    "url": "https://youtu.be/Qqi_EZ0DgrA?si=8_apl3UpX9X6lsJG"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/Xi9SJD83UnA/maxresdefault.jpg",
+    "name": "Kalasasaya",
+    "author": "Nazca Sound - Topic",
+    "type": "track",
+    "url": "https://youtu.be/Xi9SJD83UnA?si=ELzik30hx8g9vYY9"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/yvQg_RqRC14/hqdefault.jpg",
+    "name": null,
+    "author": "proudnish",
+    "type": "track",
+    "url": "https://youtu.be/yvQg_RqRC14?si=Sa0WnT69kbxC-yGw"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/hcBWxkc5H3Y/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgTCg1MA8=&rs=AOn4CLCH7A3kngQF_FhucpLCFjkONOWH_w",
+    "name": null,
+    "author": "Andrés Chimango Lares",
+    "type": "track",
+    "url": "https://youtu.be/hcBWxkc5H3Y?si=DQ-lcUnNLMCmRl4A"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/3-3TQQMMtRg/maxresdefault.jpg",
+    "name": "Ostinato",
+    "type": "playlist",
+    "url": "https://youtube.com/playlist?list=OLAK5uy_k6GaF0unR8JzhCPrvzjDuZrKig1QTWyj0&si=9dhQjuCOcClRe2aL"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/xzh1HcmUcHs/hqdefault.jpg",
+    "name": "Kruder & Dorfmeister - in various G Stone Book",
+    "author": "Rweb tv",
+    "type": "track",
+    "url": "https://youtu.be/xzh1HcmUcHs?si=9VpBr5f4J3fXGuTu"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/gOF-ME1F__E/maxresdefault.jpg",
+    "name": "El Carnaval de Huancayo / Adiós Juventud / Toro Cachudo",
+    "author": "Los Super Cocaleros - Topic",
+    "type": "track",
+    "url": "https://youtu.be/gOF-ME1F__E?si=GO-74DOrJ7jQAS3R"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi_webp/c26ThPeo4cA/maxresdefault.webp",
+    "name": null,
+    "author": "Los Uros De Titicaca - Topic",
+    "type": "track",
+    "url": "https://youtu.be/c26ThPeo4cA?si=hPx61SsWqQQ6cMAB"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/bmWd692Abx8/maxresdefault.jpg",
+    "name": "Duo Mandala Tapestry",
+    "type": "playlist",
+    "url": "https://youtube.com/playlist?list=OLAK5uy_mQDhHKjFYTl_gJqRYK0CbWw7Ut6RZWWyg&si=CXsKsA7lH0qQepLD"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/w8glrLkMpBs/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGF0gZShUMA8=&rs=AOn4CLDRXwED5owvlyAgsyNW8fiirtWYfg",
+    "name": null,
+    "author": "farid20070",
+    "type": "track",
+    "url": "https://youtu.be/w8glrLkMpBs?si=lKRSA3kFxTZZhD-r"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi_webp/LlN8MPS7KQs/maxresdefault.webp",
+    "name": null,
+    "author": "dreamscape",
+    "type": "track",
+    "url": "https://youtu.be/LlN8MPS7KQs?si=5i1KpiEOR1rVihEY"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/v4uoqnEEr4g/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGCogUyh_MA8=&rs=AOn4CLCUgI9DzrbLFR2rJDS6loDwkxFbxA",
+    "name": null,
+    "author": "Michel PARIS",
+    "type": "track",
+    "url": "https://youtu.be/v4uoqnEEr4g?si=eWMCzDZYmBYAPSCy"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi_webp/MB9WKhJLBjs/maxresdefault.webp",
+    "name": null,
+    "author": "Omar Sepulveda - Topic",
+    "type": "track",
+    "url": "https://youtu.be/MB9WKhJLBjs?si=sWIV8WKgv0lv-Fr5"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi_webp/FH7QW2zWIko/maxresdefault.webp",
+    "name": null,
+    "author": "Waskar Amaru - Topic",
+    "type": "track",
+    "url": "https://youtu.be/FH7QW2zWIko?si=kowwYfsXPqttHgAy"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi/YI_0OwQF3eg/maxresdefault.jpg",
+    "name": "Winds Of Honor",
+    "author": "Gary Stroutsos - Topic",
+    "type": "playlist",
+    "url": "https://youtube.com/playlist?list=OLAK5uy_n6tMR0PXGoIi1q-OVrVJT55z36VLVyjpY&si=9YV2_iCU8oy9nPcH"
+  },
+  {
+    "thumbnail": "https://i.ytimg.com/vi_webp/vgncFFsmmIE/maxresdefault.webp",
+    "name": null,
+    "author": "SKALA MUSICAL",
+    "type": "track",
+    "url": "https://youtu.be/vgncFFsmmIE?si=SW8eXMl5uNKXhskl"
   }
 ]

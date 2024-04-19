@@ -52,12 +52,12 @@ async function main(){
     } else {
       succeeded_links.push(idLinkMap[messageId])
       tracks.push(trackInfo)
-      writeToJSON(tracks)
+      // writeToJSON(tracks)
     }
   }
   writeToFile(failed_links, 'failed links.txt')
   writeToFile(succeeded_links, 'succeeded links.txt')
-  // writeToJSON(tracks)
+  writeToJSON(tracks)
   await scraper.browser.close()
 }
 

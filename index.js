@@ -5,10 +5,10 @@ const exphbs = require("express-handlebars");
 const path = require("path");
 const bodyParser = require("body-parser");
 
-const { botClass, bot } = require("./bot.js");
+// const { botClass, bot } = require("./bot.js");
 
-const PORT = 5000; //FOR LOCAL USE
-// const PORT = process.env.PORT || 5000;
+// const PORT = 5000; //FOR LOCAL USE
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 const hbs = exphbs.create({
@@ -19,15 +19,15 @@ const hbs = exphbs.create({
 app.engine("hbs", hbs.engine);
 app.set("view engine", "hbs");
 app.set("views", "views");
-
+  
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(pathRouter);
 
-botClass.start().then(() => {
-  botClass.listen();
-});
+// botClass.start().then(() => {
+//   botClass.listen();
+// });
 
 app.listen(PORT, async () => {
   console.log(`server started on port ${PORT}`);

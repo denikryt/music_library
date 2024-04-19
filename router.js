@@ -1,12 +1,10 @@
 const Router = require("express");
 const Controller = require("./controller.js");
-const { botClass, bot } = require("./bot.js");
+// const { botClass, bot } = require("./bot.js");
 
 const router = new Router();
 
-router.get("/", Controller.list_render);
-
-router.get("/list", Controller.list_render);
+router.get("/", Controller.all_tracks);
 
 router.get("/songs", Controller.songs_render);
 
@@ -26,9 +24,9 @@ router.get("/css/:filename", Controller.serveCSS);
 
 router.get("/script/:filename", Controller.serveScripts);
 
-router.post(`/bot${bot.token}`, (req, res) => {
-  bot.processUpdate(req.body);
-  res.sendStatus(200);
-});
+// router.post(`/bot${bot.token}`, (req, res) => {
+//   bot.processUpdate(req.body);
+//   res.sendStatus(200);
+// });
 
 module.exports = router;

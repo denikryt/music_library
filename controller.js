@@ -4,11 +4,16 @@ const path = require("path");
 const fs = require("fs");
 const puppeteer = require("puppeteer");
 const youtubeScraper = require("./youtubeScraperTest");
+const DataBase = require("./database");
 
 class formController {
   constructor() {
     this.createNewTrack = this.createNewTrack.bind(this);
+    this.all_tracks = this.all_tracks.bind(this);
+    this.db = new DataBase('music');
+    this.getAllTracks = this.db.getAllTracks.bind(this);
   }
+
   async default_render(req, res) {
     try {
       const tracks = await Tracks.find({}).sort({ name: 1 }).lean();
@@ -22,10 +27,11 @@ class formController {
     } catch (e) {}
   }
 
-  async list_render(req, res) {
+  async all_tracks(req, res) {
+    console.log("ALL TRACKS");
     try {
-      const tracks = await Tracks.find({}).sort({ name: 1 }).lean();
-      // console.log("TRACKS" + tracks);
+      const tracks = await this.db.getAllTracks("tracks");
+      console.log("TRACKS" + tracks);
 
       res.render("list_view", {
         title: "Audio",
