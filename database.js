@@ -7,15 +7,15 @@ class DataBase {
     constructor(dbName) {
         this.db = null;
         this.url = process.env.MONGODB_URI;
-        this.connect(dbName);
+        this.dbName = dbName;
     }
 
-    async connect(dbname) {
-        try {
-            await mongoose.connect(this.url, {
+    async connect() {
+        try { 
+            mongoose.connect(this.url, {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,
-                dbName: dbname
+                dbName: this.dbName
             });
             console.log("Connected to MongoDB");
             this.db = mongoose.connection;
@@ -30,7 +30,7 @@ class DataBase {
             const track = new TrackSchema({
                 url: data.url, 
                 thumbnail: data.thumbnail,
-                name: data.name || "Unknown",
+                name: data.name,
                 type: data.type,
             })
             await track.save();
@@ -51,6 +51,32 @@ class DataBase {
         } catch (error) {
             console.log(error);
             throw new Error("Failed to fetch tracks");
+        }
+    }
+
+    async dropCollection(collection) {
+        try {
+            if (!this.db) {
+                throw new Error("Database connection not established");
+            }
+            await this.db.collection(collection).drop();
+            console.log("Collection dropped");
+        } catch (error) {
+            console.log(error);
+            throw new Error("Failed to drop collection");
+        }
+    }
+
+    async close() {
+        try {
+            if (!this.db) {
+                throw new Error("Database connection not established");
+            }
+            await this.db.close();
+            console.log("Connection closed");
+        } catch (error) {
+            console.log(error);
+            throw new Error("Failed to close connection");
         }
     }
 }

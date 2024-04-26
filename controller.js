@@ -11,32 +11,17 @@ class formController {
     this.createNewTrack = this.createNewTrack.bind(this);
     this.all_tracks = this.all_tracks.bind(this);
     this.db = new DataBase('music');
+    this.db.connect();
     this.getAllTracks = this.db.getAllTracks.bind(this);
-  }
-
-  async default_render(req, res) {
-    try {
-      const tracks = await Tracks.find({}).sort({ name: 1 }).lean();
-      console.log("TRACKS" + tracks);
-
-      res.render("default_view", {
-        title: "Audio",
-        isAdd: true,
-        tracks,
-      });
-    } catch (e) {}
   }
 
   async all_tracks(req, res) {
     console.log("ALL TRACKS");
     try {
       const tracks = await this.db.getAllTracks("tracks");
-      console.log("TRACKS" + tracks);
 
       res.render("list_view", {
-        title: "Audio",
-        isAdd: true,
-        tracks,
+        body: tracks.reverse(),
       });
     } catch (e) {}
   }

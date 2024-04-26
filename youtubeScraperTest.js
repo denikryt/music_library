@@ -71,11 +71,11 @@ class YoutubeScraper {
     
     let name = null
 
-    if (type == 'video') {
+    if (type == 'track') {
       console.log('[getDataByEmbedUrl] TYPE', type)
       name = await this.getVideoTitleByEmbedUrl(page)
     
-    } else if (type == 'playlist') {
+    } else if (type == 'album') {
       console.log('[getDataByEmbedUrl] TYPE', type)
       name = await this.getPlaylistTitleByEmbedUrl(page)
     
@@ -280,6 +280,7 @@ class YoutubeScraper {
   }
 
   async processLinks(links) {
+    await this.runBrowser();
 
     try {
       for (let key in links) {
@@ -326,7 +327,7 @@ class YoutubeScraper {
         await this.page.goto(embedURL);
         const EmbedError = await this.hasYtpErrorClass(this.page);
 
-        const type = embedURL.length > 47 ? 'playlist' : 'track';
+        const type = embedURL.length > 47 ? 'album' : 'track';
         let data = {}
 
         if (EmbedError) {
@@ -356,69 +357,19 @@ class YoutubeScraper {
     }
   }
 
-  async scrapeData_old(url) {
-    const browser = await puppeteer.launch({
-      args: ["--no-sandbox", "--disable-setuid-sandbox", "--headless"],
-    });
-    const page = await browser.newPage();
-    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36');
-    page.setDefaultTimeout(0);
-    page.setDefaultNavigationTimeout(0);
-
-    const embedURL = await this.convertYoutubeUrlToEmbed(url)
-    console.log('[scrapeData] EMBED URL: ',embedURL)
-
-    try {
-      await page.goto(embedURL);
-      const EmbedError = await this.hasYtpErrorClass(page);
-
-      const type = embedURL.length > 47 ? 'playlist' : 'video';
-      let data = {}
-
-      if (EmbedError) {
-        console.log('Embed url crahsed');
-        data = await this.getDataByMetadata(page, url)
-        data.type = type
-        console.log(data)
-        
-        if (!data) {
-          console.log('UNABLE TO EXTRACT DATA')
-          return null
-        }
-
-      } else {
-        console.log('Embed url works')
-        data = await this.getDataByEmbedUrl(page, type)
-        data.type = type
-        console.log(data)
-      }
-      return data
-
-    } catch (error) {
-      console.log(error);
-    } finally {
-      await browser.close();
-    }
-  }
 }
 
 module.exports = new YoutubeScraper();
 
 // const scraper = new YoutubeScraper()
 
-const links = {
-  videolinks: [
-    "https://youtu.be/lh_WD_cLrRY?si=Xxw4B3PcBteb5mQh",
-    "https://youtu.be/rIYnXgvRJVM?si=CaitzEtJ1rYJxoOo",
-    "https://youtu.be/aj1fvYcexOU?si=dCLBDp8jm8S7de4z",
-    "https://youtu.be/pyqFTZwoIkM?si=rCc6YOQHlxT11Ov8",
-  ],
-  playlistlinks: [
-    "https://www.youtube.com/playlist?list=OLAK5uy_k6GaF0unR8JzhCPrvzjDuZrKig1QTWyj0",
-    "https://youtube.com/playlist?list=OLAK5uy_kBVAk8lzaTTX1SyTolNzWyR_5uc55We84&si=iqnic8K7jSGsJGJA",
-    "https://youtube.com/playlist?list=OLAK5uy_mngnWirAK0rpqIKwJDC8bZmRmdYzOKA5I&si=NeQbcmSwdQkqu8qm",
-    "https://youtube.com/playlist?list=OLAK5uy_kP22lgx7FDIkJ3jM1gQbSGhyTb8MJwBVw&si=T9CWW8U9eyoQv4tB",
-  ]
-}
+// const links = {
+//   videolinks: [
+//     "https://youtu.be/FH7QW2zWIko?si=ugMXUunRqNSrpd4G",
+//     "https://youtu.be/xzh1HcmUcHs?si=mOTecDLyXjaJ6FZ6"
+//   ],
+//   playlistlinks: [
+//   ]
+// }
 
 // scraper.processLinks(links);
